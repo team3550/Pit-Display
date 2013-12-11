@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="This is a basic webpage that serves as a display for Beta, FTC team 3550 for the November 2nd qualifier">
-		<meta name="author" content="Beta, #3550">
-		<link rel="shortcut icon" href="assets/ico/favicon.png">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a basic webpage that serves as a display for Beta, FTC team 3550 for the November 2nd qualifier">
+    <meta name="author" content="Beta, #3550">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
 		
-		<title>Building Robots</title>
+    <title>Building Robots</title>
     
     <!-- include Bootstrap 3.0.0 -->
     <link rel="stylesheet" href="dist/css/bootstrap.min.css">
     <style> body { padding-top:50px } </style>
-	</head>
+    <script>
+            function redirect() {
+                    window.location="index.html";
+            }
+            
+            function startTimeout() {
+                    timeoutID = window.setTimeout(redirect, 300000);
+            }
+            
+            function resetTimeout() {
+                    window.clearTimeout(timeoutID);
+                    startTimeout();
+            }
+    </script>
+  </head>
   
-	<body>
+  <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -104,5 +118,9 @@
     
     <script src="assets/js/jquery.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
-	</body>
+    <script>
+            startTimeout();
+            document.getElementsByTagName("body")[0].onmousemove = resetTimeout;
+    </script>
+  </body>
 </html>

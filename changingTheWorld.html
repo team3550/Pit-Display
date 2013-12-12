@@ -18,10 +18,12 @@
     	}
     	
     	function startTimeout() {
-    		timeoutID = window.setTimeout(redirect, 300000);
+    		console.log("starting timeout");
+    		timeoutID = window.setTimeout(redirect, 3000);
     	}
     	
     	function resetTimeout() {
+    		console.lgo("resetting timeout");
     		window.clearTimeout(timeoutID);
     		startTimeout();
     	}

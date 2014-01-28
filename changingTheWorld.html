@@ -14,7 +14,7 @@
     <style> body { padding-top:50px } </style>
     <script>
     	function redirect() {
-    		window.location="index.html";
+    		//window.location="index.html";
     	}
     	
     	function startTimeout() {
@@ -23,7 +23,7 @@
     	}
     	
     	function resetTimeout() {
-    		console.lgo("resetting timeout");
+    		console.log("resetting timeout");
     		window.clearTimeout(timeoutID);
     		startTimeout();
     	}
@@ -134,7 +134,7 @@
     <script src="dist/js/bootstrap.min.js"></script>
     <script>
     	startTimeout();
-    	document.getElementsByTagName("body")[0].onmousemove = resetTimeout;
+    	document.getElementsByTagName("body")[0].onmousemove = resetTimeout();
     </script>
   </body>
 </html>

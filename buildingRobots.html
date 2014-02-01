@@ -11,22 +11,23 @@
     
     <!-- include Bootstrap 3.0.0 -->
     <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/PitDisplay.css">
     <style> body { padding-top:50px } </style>
     <script>
-            function redirect() {
-                    window.location="index.html";
-            }
-            
-            function startTimeout() {
-            	    console.log("started timeout");
-                    timeoutID = window.setTimeout(redirect, 3000);
-            }
-            
-            function resetTimeout() {
-            	    console.log("resetting timeout");
-                    window.clearTimeout(timeoutID);
-                    startTimeout();
-            }
+		function redirect() {
+			window.location="index.html";
+		}
+		
+		function startTimeout() {
+			console.log("starting timeout");
+			timeoutID = window.setTimeout(redirect, 420000);
+		}
+		
+		function resetTimeout() {
+			console.log("resetting timeout");
+			window.clearTimeout(timeoutID);
+			startTimeout();
+        }
     </script>
   </head>
   
@@ -67,9 +68,9 @@
     <div class="container">
       <div class="row">
       
-        <div id="Gemini" class="col-xs-8">
-          <div class="thumbnail">
-            <div class="caption">
+        <div id="Gemini">
+          <div class="thumbnail col-xs-10">
+            <div class="caption; col-xs-6">
               <h2> Gemini</h2>
               <p> This year's robot, named Gemini, features mechanisms to pick up and place blocks in the baskets, and sensors to detect the IR beacon.
                     To pick up blocks, the robot drives into the corner, and scoops up to 4 blocks into the "bucket".  The bucket is mounted onto a telescoping
@@ -80,9 +81,9 @@
           </div>          
         </div>
         
-        <div id="cad" class="col-xs-8">
-          <div class="thumbnail">
-            <div class="caption">
+        <div id="cad">
+          <div class="thumbnail col-xs-10">
+            <div class="caption col-xs-6">
               <h2> CAD design</h2>
               <p>  Gemini was completely designed in CAD before fabricating parts, and the model serves as a design plan for the season.  The model started out as a basic
                     skeleton of sketches to see how different components would interact, and allow us to dynamically change the design.  Then, each part was modeled or imported to create a final design for analysis.
@@ -92,9 +93,9 @@
           </div>
         </div>
         
-        <div id="scouting" class="col-xs-8">
-          <div class="thumbnail">
-            <div class="caption">
+        <div id="scouting">
+          <div class="thumbnail col-xs-10">
+            <div class="caption col-xs-6">
               <h2> Scouting App</h2>
               <p> In addition to the robot, we also design a scouting application to keep track of teams and their robots during the competition.  This application is
                   based on HTML5, CSS3, and Javascript so that it is device-agnostic, and is able to run in any HTML5 capable browser.  This allows us to distribute
@@ -104,9 +105,9 @@
           </div>
         </div>
         
-        <div id="display" class="col-xs-8">
-          <div class="thumbnail">
-            <div class="caption">
+        <div id="display">
+          <div class="thumbnail col-xs-10">
+            <div class="caption col-xs-6">
               <h2> This display</h2>
               <p>  As a result of creating and designing The Yellow Alliance, and the web-based Scouting app, we decided to apply our newly gained knowledge and skills to this display,
                    which is actually a locally hosted webpage.  This webpage display runs off of HTML5, CSS3, Javascript, and a Bootstrap CSS plugin, allowing us to create a display

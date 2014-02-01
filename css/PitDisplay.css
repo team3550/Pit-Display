@@ -1,0 +1,14 @@
+.container .jumbotron {
+padding-right:30px;padding-left:30px;
+padding-top:30px;
+}
+
+.jumbotron {
+padding:30px;margin-bottom:30px;font-size:21px;font-weight:200;line-height:1.75;color:inherit;background-color:#eee
+}
+
+.thumbnail {
+padding-left:30px;
+margin:10px;
+}
+

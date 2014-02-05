@@ -1,3 +1,7 @@
+body {
+  padding-top:50px;
+}
+
 .container .jumbotron {
 padding-right:30px;padding-left:30px;
 padding-top:30px;
@@ -10,4 +14,9 @@ padding:30px;margin-bottom:30px;font-size:21px;font-weight:200;line-height:1.75;
 .thumbnail {
 padding-left:30px;
 margin:10px;
+}
+
+.section {
+    padding-top:50px;
+    margin-top:-50px;
 }
